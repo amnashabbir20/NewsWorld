@@ -24,22 +24,25 @@ function Home() {
   return (
     <>
     <div className='topic'>
-      <h2>TOP TRENDS</h2>
+      <h2 className='neon' data-text="Neon" contenteditable>TRENDING</h2>
     </div>
+    <div class="gradient"></div>
+  <div class="spotlight"></div>
     <div className=  'col-7'>
-      {/* Display the fetched news data */}
       {data.map((article) => (
-        <div key={article.title}>
-          <h2>{article.title}</h2>
-          <h3>{article.author}</h3>
+        <div className='inner' key={article.title}>
+          <h3>{article.title}</h3>
+          <p> by {article.author}</p>
           <p>{article.description}</p>
           <url>{article.url}</url>
           <div className='col-3'>
-         <img src={article.urlToImage} alt={article.title} width='200px' height='200px' />
+         <img src={article.urlToImage} alt={article.title} width='120px' height='120px' />
          </div>
         </div>
         
+        
       ))}
+    
     </div>
     </>
   );

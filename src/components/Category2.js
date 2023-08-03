@@ -29,13 +29,13 @@ function Category2() {
     <div className=  'col-7'>
       {/* Display the fetched news data */}
       {usNews.map((article) => (
-        <div key={article.title}>
-          <h2>{article.title}</h2>
-          <h3>{article.author}</h3>
+        <div  className='inner' key={article.title}>
+          <h3>{article.title}</h3>
+          <p>{article.author}</p>
           <p>{article.description}</p>
           <url>{article.url}</url>
           <div className='col-3'>
-         <img src={article.urlToImage} alt={article.title} width='200px' height='200px' />
+         <img src={article.urlToImage} alt={article.title} width='120px' height='120px' />
          </div>
         </div>
         
