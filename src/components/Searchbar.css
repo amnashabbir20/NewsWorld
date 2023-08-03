@@ -1,0 +1,58 @@
+/* body {
+display:flex;
+justify-self: center;
+align-items: center;
+flex-wrap: nowrap;
+overflow: hidden;
+} */
+/* .search-box{
+    font-size: 20px;
+    border:solid 0.1em;
+    border-color: navy;
+    display:inline-block;
+    position:relative;
+    border-radius: 1.5em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/* Add this CSS to center the search box and create a gap between the navbar and the search box */
+
+.App {
+    display: flex;
+    flex-direction: column;
+      background-image: url("./image.jpg"); 
+      background-position: 50% 50%;
+      background-repeat: repeat;
+    }
+  
+  
+  .col-7{
+    background-color: aqua;
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  }
+  .topic{
+    margin:auto;
+    width: 50%;
+    border: 3px solid green;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+  }
+ 
+  
+  .search-box {
+    /* Styles to center the search box and add gap between navbar and search box */
+    margin-top: 20px;
+    margin-bottom:20px; /* Adjust the value as needed to create the desired gap */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Your other existing styles for the search box go here */
+  /* For example: border: 1px solid #ccc; padding: 8px; */
+  
