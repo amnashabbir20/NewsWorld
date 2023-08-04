@@ -8,7 +8,9 @@ import Category1 from './components/Category1';
 import NewsDetail from './components/Newsdetail';
 import Category2 from './components/Category2';
 import Category3 from './components/Category3';
-import Search from './components/Search';
+import SignIn from './components/SignIn';
+
+
 function App() {
   return (
     <>
@@ -16,10 +18,11 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Search />
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/newsdetail' element={<NewsDetail />} />
+          <Route path='/signin' element={<SignIn/>} />
           <Route path='/category1' element={<Category1 />} />
           <Route path='/category2' element={<Category2 />} />
           <Route path='/category3' element={<Category3 />} />

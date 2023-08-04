@@ -1,8 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-//const apiKey = 'YOUR_NEWS_API_KEY';
-
-// Async thunk to fetch data from the News API
 export const fetchDataFromAPI = createAsyncThunk('data/fetchData', async () => {
   try {
     const response = await fetch(

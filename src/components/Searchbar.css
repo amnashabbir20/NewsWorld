@@ -1,5 +1,13 @@
 
-
+body {
+  /* Add appropriate styles for the body element */
+  margin: 0;
+  padding: 0;
+  background-image: url("./image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .App {
     display: flex;
     flex-direction: column;
@@ -23,7 +31,7 @@
     color:antiquewhite;
     margin-bottom: 20px;
   width: 100%;
-  border: 3px solid navy;
+  border: 3px solid rgb(2, 2, 112);
   border-radius: 15px;
   padding: 10px 10px 10px 10px;
   
@@ -31,21 +39,94 @@
   
   .topic{
    align-items: center;
-   padding-left: 550px;
+   padding-left: 750x;
    color:antiquewhite;
   
   
   }
  
   
-  .search-box {
+  .search-box { 
     margin-top: 20px;
     margin-bottom:20px; 
     display: flex;
     justify-content: center;
+    padding-left: 300px;
+    
    
+  }
+  .but{
+    border: 3px solid navy;
+  border-radius: 10px;
+  
+  }
+  .trending-text {
+    font-weight: bold;
+    text-shadow: 6px 6px 6px rgba(13, 1, 52, 0.5);
+    background-image: linear-gradient(120deg, rgb(120, 119, 119), rgb(249, 251, 252));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-left:200px
   }
   
   
+  .nav-link{
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(99, 99, 100, 0.5);
+    
+    
+    
+  }
+  .url{
+    color:antiquewhite
+  }
+  .container {
+    max-width: 400px;
+    border: 3px solid rgb(2, 2, 112);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
   
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 3px solid rgb(2, 2, 112);
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(2, 2, 112);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:rgb(2, 2, 112);
+  }
   

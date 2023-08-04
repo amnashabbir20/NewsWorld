@@ -5,8 +5,8 @@ const Search = () => {
   return (
     <div>
       <form className="search-box">
-        <input type="text" placeholder="Search Here"/>
-        <button type="reset">Click</button>
+        <input  className='but' type="text" placeholder="....Search Here"/>
+        <button className='but' type="reset">Click</button>
       </form>
     </div>
   )

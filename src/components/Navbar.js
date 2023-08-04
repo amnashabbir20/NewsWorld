@@ -15,7 +15,7 @@ export default function Navbar(props) {
         style={{
           display: 'flex',
           gap: '15px',
-          color: 'lightblue',
+          color:'white',
           border: '5px solid darkblue',
           borderRadius: '10px',
           padding: '5px',
@@ -46,6 +46,16 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <Link to={'/newsdetail'} className="nav-link">
                   NewsDetail
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to={'/newsdetail'} className="nav-link">
+                  About Us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to={'/signin'} className="nav-link">
+                  SignIn
                 </Link>
               </li>
               <li className="nav-item dropdown">
